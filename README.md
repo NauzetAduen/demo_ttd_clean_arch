@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # demo_tdd_clean_arch
 
 A new Flutter project.
@@ -15,6 +14,3 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-=======
-# demo_ttd_clean_arch
->>>>>>> 9c39a06ff4f334db335191a5d9ec05643f80753f
