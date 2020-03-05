@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 abstract class NumberTriviaState extends Equatable {
-  const NumberTriviaState();
+  NumberTriviaState();
 }
 
 class InitialNumberTriviaState extends NumberTriviaState {
