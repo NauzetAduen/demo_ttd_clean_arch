@@ -1,16 +1,16 @@
 # demo_tdd_clean_arch
 
-A new Flutter project.
+Project to learn Clean Architecture + TDD with Flutter.
 
-## Getting Started
+## ResoCoder
 
-This project is a starting point for a Flutter application.
+This project is a tutorial made by [ResoCoder](https://github.com/ResoCoder)
 
-A few resources to get you started if this is your first Flutter project:
+You can follow it [here](https://www.youtube.com/watch?v=dc3B_mMrZ-Q) (7h youtube tutorial)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+and [here](https://www.youtube.com/watch?v=KjE2IDphA_U&list=PLB6lc7nQ1n4iYGE_khpXRdJkJEp9WOech) (youtube list)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+and [here](https://resocoder.com/category/tutorials/flutter/tdd-clean-architecture/) (written tutorial)
+
+
