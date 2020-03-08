@@ -1,5 +1,5 @@
 /// Thrown by remoteDataSource
-class ServerExceptions implements Exception {}
+class ServerException implements Exception {}
 
 /// Thrown by localDatasource
-class CacheExceptions implements Exception {}
+class CacheException implements Exception {}
