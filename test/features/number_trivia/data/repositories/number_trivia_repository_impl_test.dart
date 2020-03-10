@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:demo_tdd_clean_arch/core/error/exceptions.dart';
 import 'package:demo_tdd_clean_arch/core/error/failures.dart';
-import 'package:demo_tdd_clean_arch/core/platform/network_info.dart';
+import 'package:demo_tdd_clean_arch/core/network/network_info.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/data/datasources/number_trivia_local_data_source.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/data/models/number_trivia_model.dart';
