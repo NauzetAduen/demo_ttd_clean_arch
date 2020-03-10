@@ -1,14 +1,14 @@
 import 'package:dartz/dartz.dart';
-import 'package:demo_tdd_clean_arch/core/error/exceptions.dart';
-import 'package:demo_tdd_clean_arch/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:meta/meta.dart';
 
+import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/network/network_info.dart';
 import '../../domain/entities/number_trivia.dart';
 import '../../domain/repositories/number_trivia_repository.dart';
 import '../datasources/number_trivia_local_data_source.dart';
 import '../datasources/number_trivia_remote_data_source.dart';
+import '../models/number_trivia_model.dart';
 
 typedef ConcreteOrRandomChooser = Future<NumberTrivia> Function();
 
