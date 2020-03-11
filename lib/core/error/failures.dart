@@ -15,3 +15,5 @@ class ServerFailure extends Failure {}
 /// Used by useCases
 
 class CacheFailure extends Failure {}
+
+class InvalidInputFailure extends Failure {}
