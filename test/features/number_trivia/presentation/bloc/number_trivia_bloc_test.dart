@@ -1,4 +1,7 @@
+import 'package:dartz/dartz.dart';
+import 'package:demo_tdd_clean_arch/core/error/failures.dart';
 import 'package:demo_tdd_clean_arch/core/util/input_converter.dart';
+import 'package:demo_tdd_clean_arch/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 import 'package:demo_tdd_clean_arch/features/number_trivia/presentation/bloc/bloc.dart';
@@ -33,5 +36,38 @@ void main() {
 
   test('initialState should be Empty', () async {
     expect(bloc.initialState, equals(Empty()));
+  });
+
+  group('GetTriviaForConcreteNumber', () {
+    const tNumberString = '1';
+    const tNumberParsed = 1;
+    final tNumberTrivia = NumberTrivia(
+      number: 1,
+      text: 'test',
+    );
+
+    test('should call the InputConverter to validate', () async {
+      when(mockInputConverter.stringToUnsignedInteger(any))
+          .thenReturn(Right(tNumberParsed));
+
+      bloc.dispatch(GetTriviaForConcreteNumber(tNumberString));
+      await untilCalled(mockInputConverter.stringToUnsignedInteger(any));
+
+      verify(mockInputConverter.stringToUnsignedInteger(tNumberString));
+    });
+    test('should emit [Error] when the input is invalid', () async {
+      //
+      when(mockInputConverter.stringToUnsignedInteger(any))
+          .thenReturn(Left(InvalidInputFailure()));
+      final expectedOrder = [
+        Empty(),
+        Error(errorMessage: invalidInputFailureMessage),
+      ];
+      expectLater(bloc.state, emitsInOrder(expectedOrder));
+      bloc.dispatch(GetTriviaForConcreteNumber(tNumberString));
+    });
+    test('', () async {
+      //
+    });
   });
 }
